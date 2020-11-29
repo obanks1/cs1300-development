@@ -33,7 +33,7 @@ class CartItem extends Component {
                         <CustomButton variant="contained" size="small" color="inherit" onClick={() => this.props.removeFromCart(post)}><RemoveIcon style={{maxWidth: '20px'}}/></CustomButton>
                     </div>
                 </div>
-                <img src={post.photo} alt="visual of product" className="cartPhoto"></img>
+                <img src={post.photo} loading="lazy" alt="visual of product" className="cartPhoto"></img>
             </div>
         )
     }
