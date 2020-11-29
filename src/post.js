@@ -17,7 +17,7 @@ class Post extends Component {
                     <h4 className="price">${post.price.toFixed(2)}</h4>
                     <Button className="addButton" size="medium" color="inherit" style={{padding: 0, backgroundColor: 'rgba(256, 256, 256, 0.7)'}} onClick={() => this.props.addToCart(post)}><AddShoppingCartIcon/><h5 className="quantity">{post.quantity}</h5></Button>
                 </div>
-                <img src={post.photo} loading="lazy" alt="visual of product" className="photo"></img>
+                <img src={post.photo} alt="visual of product" className="photo"></img>
             </div>
         )
     }
