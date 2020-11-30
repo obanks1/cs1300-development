@@ -9,10 +9,10 @@ class Post extends Component {
             <div className="post" key={post.key}>
                 <div className="postText">
                     <div className="description">
-                        <h3>{post.title}</h3>
-                        <p style={{lineHeight: '25px', margin: 0,}}>subject: {post.subject}</p>
-                        <p style={{margin: 0,}}>format: {post.format}</p>
-                        <div className="description"><p>{post.desc} </p></div>
+                        <h3 className="postTitle">{post.title}</h3>
+                        <p style={{lineHeight: '25px', margin: 0,}}className="subjText">subject: {post.subject}</p>
+                        <p style={{margin: 0,}}className="formText">format: {post.format}</p>
+                        <div className="description"><p className="descText">{post.desc} </p></div>
                     </div>
                     <h4 className="price">${post.price.toFixed(2)}</h4>
                     <Button className="addButton" size="medium" color="inherit" style={{padding: 0, backgroundColor: 'rgba(256, 256, 256, 0.7)'}} onClick={() => this.props.addToCart(post)}><AddShoppingCartIcon/><h5 className="quantity">{post.quantity}</h5></Button>

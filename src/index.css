@@ -181,8 +181,16 @@ h2 {
 }
 
 .cartTitle {
-  line-height: 0;
-  margin: 10px 10px 25px 0px;
+  margin: 0px 0px 20px 0px;
+  line-height: 15px;
+  max-width:90%;
+  word-wrap: break-word;
+}
+
+.cartDesc {
+  margin-right: '10px';
+  max-width: 90%;
+  word-wrap: break-word;
 }
 
 .totalText {
@@ -196,5 +204,23 @@ h2 {
   justify-content: center;
 }
 
+@media only screen and (max-width: 1245px) { 
+  .postTitle {
+    line-height: 5px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 1145px) {
+  .descText {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: small;
+  }
+  .subjText, .formText {
+    font-size: small;
+    line-height: 10px;
+  }
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,500&display=swap');

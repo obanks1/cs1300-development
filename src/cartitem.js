@@ -25,7 +25,7 @@ class CartItem extends Component {
                     <div className="cartItemDescription">
                         <h3 className="cartTitle">{post.title}</h3>
                         <h4 className="cartPrice">${post.price.toFixed(2)}</h4>
-                        <div><p style={{marginRight: '10px'}}>{post.desc}</p></div>
+                        <div><p className="cartDesc">{post.desc}</p></div>
                     </div>
                     <div className="sidebyside">
                         <CustomButton variant="contained" size="small" color="inherit" className="button" onClick={() => this.props.addToCart(post)}><AddIcon style={{maxWidth: '20px'}}/></CustomButton>

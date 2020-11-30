@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
         posts: [
           {title: 'ORANGE TREE', key: 2, quantity: 0, price: 4.99, subject: 'nature', format: 'digital photo', photo: 'barcelona.JPG', desc: 'an orange tree on the streets of barcelona'},
-          {title: 'MONOCHROME', key: 1, quantity: 0, price: 45, subject: 'architecture', format: 'limited edition print', photo: 'radcam.jpg', desc: 'the radcliffe camera on a cloudy morning at oxford'},
+          {title: 'MONO CHROME', key: 1, quantity: 0, price: 45, subject: 'architecture', format: 'limited edition print', photo: 'radcam.jpg', desc: 'the radcliffe camera on a cloudy morning at oxford'},
           {title: 'LONDON SKY', key: 0, quantity: 0, price: 35, subject: 'architecture', format: 'limited edition print', photo: 'london.JPG', desc: 'the london skyline from the top floor of the tate modern'},
           {title: 'LOST CANYON', key: 11, quantity: 0, price: 15.99, subject: 'nature', format: 'print', photo: 'canyon.JPG', desc: 'a canyon deep in the deserts of the american southwest'},
           {title: 'DESERT PATH', key: 5, quantity: 0, price: 4.99, subject: 'nature', format: 'digital photo', photo: 'desert.JPG', desc: 'a desert trail in southern new mexico'},
@@ -82,7 +82,7 @@ class App extends Component {
         </div>
       </div>
       <div className="cart">
-        <h2 style={{fontFamily: 'Raleway', fontWeight: '600'}}>CART</h2>
+        <h2 style={{fontFamily: 'Raleway', fontWeight: '700'}}>CART</h2>
         <CartItem posts={this.state.posts} addToCart={this.addToCart} removeFromCart={this.removeFromCart}/>
         <div className="total">
           <h2 className="totalText">Total: ${this.state.total.toFixed(2)}</h2>
